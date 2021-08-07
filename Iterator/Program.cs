@@ -12,7 +12,7 @@ namespace Iterator
             bookShelf.AppendBook(new Book("Cinderella"));
             bookShelf.AppendBook(new Book("Dabby-Long-Legs"));
             var it = bookShelf.Iterator();
-            while(it.HasNext())
+            while (it.HasNext())
             {
                 var book = (Book)it.Next();
                 Console.WriteLine(book.GetName());

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Iterator
 {
-    public class BookShelf:IAggregate
+    public class BookShelf : IAggregate
     {
         IList<Book> books = new List<Book>();
         int last = 0;
