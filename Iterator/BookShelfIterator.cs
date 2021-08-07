@@ -3,7 +3,7 @@ namespace Iterator
 {
     public class BookShelfIterator:IIterator
     {
-        private BookShelf bookShelf;
+        readonly BookShelf bookShelf;
         private int index = 0;
         public BookShelfIterator(BookShelf bookShelf)
         {
