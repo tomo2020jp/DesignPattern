@@ -7,7 +7,7 @@ namespace TemplateMethod
     {
         static void Main(string[] args)
         {
-            //Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
             AbstractDisplay d1 = new CharDisplay('H');
             AbstractDisplay d2 = new StringDisplay("Hello, world.");
             AbstractDisplay d3 = new StringDisplay("こんにちは。");
