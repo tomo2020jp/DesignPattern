@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Adapter2
 {
-    public class PrintBanner:Print
+    public class PrintBanner : Print
     {
         private readonly Banner banner;
         public PrintBanner(string str)
