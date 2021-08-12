@@ -3,7 +3,7 @@ using System.Text;
 
 namespace TemplateMethod
 {
-    public class StringDisplay:AbstractDisplay
+    public class StringDisplay : AbstractDisplay
     {
         private readonly string str;
         private readonly int width;

@@ -1,7 +1,7 @@
 ﻿using System;
 namespace TemplateMethod
 {
-    public class CharDisplay:AbstractDisplay
+    public class CharDisplay : AbstractDisplay
     {
         private readonly char ch;
         public CharDisplay(char ch)
