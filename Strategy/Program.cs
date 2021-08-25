@@ -16,7 +16,7 @@ namespace Strategy
             int seed2 = int.Parse(args[1]);
             Player player1 = new Player("Taro", new WinningStrategy(seed1));
             Player player2 = new Player("Hana", new ProbStrategy(seed2));
-            for (int i = 0; i < 10000; i++)
+            for (int i = 0; i < 1000; i++)
             {
                 Hand nextHand1 = player1.NextHand();
                 Hand nextHand2 = player2.NextHand();
@@ -38,10 +38,10 @@ namespace Strategy
                     player1.Even();
                     player2.Even();
                 }
-                Console.WriteLine("Total result:");
-                Console.WriteLine(player1.ToString());
-                Console.WriteLine(player2.ToString());
             }
+            Console.WriteLine("Total result:");
+            Console.WriteLine(player1.ToString());
+            Console.WriteLine(player2.ToString());
         }
     }
 }
