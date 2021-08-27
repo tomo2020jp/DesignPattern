@@ -10,7 +10,7 @@ namespace Observer2
         public IDisposable Subscribe(IObserver<NumberGenerator> observer)
         {
             observers.Add(observer);
-            return new Unsubscriber(observers,observer);
+            return new Unsubscriber(observers, observer);
         }
 
         public void NotiffyObserver()
@@ -26,18 +26,18 @@ namespace Observer2
 
         private class Unsubscriber : IDisposable
         {
-            private IList<IObserver<NumberGenerator>> m_observers;
-            private IObserver<NumberGenerator> m_observer;
+            private IList<IObserver<NumberGenerator>> observers;
+            private IObserver<NumberGenerator> observer;
 
             public Unsubscriber(IList<IObserver<NumberGenerator>> observers, IObserver<NumberGenerator> observer)
             {
-                m_observers = observers;
-                m_observer = observer;
+                this.observers = observers;
+                this.observer = observer;
             }
 
             public void Dispose()
             {
-                m_observers.Remove(m_observer);
+                observers.Remove(observer);
             }
         }
     }
