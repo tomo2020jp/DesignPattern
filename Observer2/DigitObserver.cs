@@ -22,13 +22,7 @@ namespace Observer2
         public void OnNext(NumberGenerator value)
         {
             Console.WriteLine($"通知受信(DigitObserver):{value.GetNumber()}");
-            try
-            {
-                Thread.Sleep(100);
-            }
-            catch (ThreadInterruptedException ex)
-            {
-            }
+            Thread.Sleep(100);
         }
     }
 }

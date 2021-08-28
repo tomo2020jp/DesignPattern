@@ -24,14 +24,7 @@ namespace Observer2
                 Console.Write("*");
             }
             Console.WriteLine("");
-            try
-            {
-                Thread.Sleep(100);
-            }
-            catch (ThreadInterruptedException ex)
-            {
-
-            }
+            Thread.Sleep(100);
         }
     }
 }

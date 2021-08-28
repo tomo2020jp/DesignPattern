@@ -8,13 +8,7 @@ namespace Observer
         public void Update(NumberGenerator generator)
         {
             Console.WriteLine($"DigitObserver:{generator.GetNumber()}");
-            try
-            {
-                Thread.Sleep(100);
-            }
-            catch (ThreadInterruptedException ex)
-            {
-            }
+            Thread.Sleep(100);
         }
     }
 }
