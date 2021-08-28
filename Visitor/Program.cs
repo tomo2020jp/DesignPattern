@@ -8,7 +8,7 @@ namespace Visitor
         {
             try
             {
-                Console.WriteLine("Maling root entries...");
+                Console.WriteLine("Making root entries...");
                 Directory rootdir = new Directory("root");
                 Directory bindir = new Directory("bin");
                 Directory tmpdir = new Directory("tmp");
