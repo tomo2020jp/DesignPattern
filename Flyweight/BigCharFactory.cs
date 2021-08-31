@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 
 namespace Flyweight
 {
@@ -16,6 +17,7 @@ namespace Flyweight
             return singleton;
         }
 
+        [MethodImpl(MethodImplOptions.Synchronized)]
         public BigChar GetBigChar(char charname)
         {
             BigChar bc;

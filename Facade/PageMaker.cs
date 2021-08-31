@@ -32,6 +32,5 @@ namespace Facade
                 Console.WriteLine(ex);
             }
         }
-
     }
 }
